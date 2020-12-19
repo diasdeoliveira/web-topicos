@@ -10,8 +10,18 @@ html {
   font-size: 62.5%;
 }
 
+main {
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
 a {
   text-decoration: none;
+  font-size: 1.6rem;
+}
+
+a:first-child {
+  margin-right: 0.8rem;
 }
 
 li {
