@@ -8,6 +8,7 @@ import Page2 from './pages/HomeWork3/pages/Page2'
 import Page3 from './pages/HomeWork3/pages/Page3'
 import Page4 from './pages/HomeWork3/pages/Page4'
 import Page5 from './pages/HomeWork3/pages/Page5'
+import HomeWork5 from './pages/HomeWork5'
 
 const MainRoutes = () => (
   <Switch>
@@ -20,6 +21,7 @@ const MainRoutes = () => (
     <Route path="/atividade-3/3" component={Page3} />
     <Route path="/atividade-3/4" component={Page4} />
     <Route path="/atividade-3/5" component={Page5} />
+    <Route path="/atividade-5" component={HomeWork5} />
   </Switch>
 )
 
