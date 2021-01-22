@@ -1,8 +1,8 @@
 import React from 'react'
 
 function averageConsumption() {
-  const liters = 10
-  const km = 30
+  const liters = 15
+  const km = 60
 
   return km/liters
 }
@@ -83,11 +83,11 @@ const HomeWork5 = () => {
 
   return(
     <>
-      <h1>1 - Cálculo de consumo médio de combustível: {averageConsumption()} km/l. (10 litros e 30 km)</h1>
-      <h1>2 - Quantas pessoas podem ter dentro de uma sala com largura <input type="number" name="width" placeholder="Largura da sala" onChange={handleRoomSizeInputs} value={roomSize.width} /> e comprimento <input type="number" name="length" placeholder="Comprimento da sala" onChange={handleRoomSizeInputs} value={roomSize.length} />: {socialDistanceCalculation(roomSize)}</h1>
-      <h1>3 - base maior <input type="number" name="major" placeholder="Base maior" onChange={handleTrapezioInputs} value={trapezio.major} />, base menor <input type="number" name="minor" placeholder="Base menor" onChange={handleTrapezioInputs} value={trapezio.minor} /> e altura <input type="number" name="height" placeholder="Altura" onChange={handleTrapezioInputs} value={trapezio.height} />: Área trapézio: {areaTrapezio(2, trapezio)}<br/> Volume pirâmide: {areaTrapezio(3, trapezio)}</h1>
-      <h1>4 - lado1 <input type="number" name="lado1" placeholder="Lado 1" onChange={handleTriangleInputs} value={triangle.lado1} />, lado2 <input type="number" name="lado2" placeholder="Lado 2" onChange={handleTriangleInputs} value={triangle.lado2} /> e lado3 <input type="number" name="lado3" placeholder="Lado 3" onChange={handleTriangleInputs} value={triangle.lado3} />: {triangleType(triangle)}</h1>
-      <h1>5 - Insira o número estático para cácluo da sequência de Fibonacci  <input type="number" placeholder="Número" onChange={handleFibonacciInputs} />: {fibonacci(fibonacciNumber).join(' ')}</h1>
+      <h1>1: Consumo médio de combustível: {averageConsumption()} km/l -- (15 litros e 60km)</h1>
+      <h1>2: Largura sala <input type="number" name="width" placeholder="Largura da sala" onChange={handleRoomSizeInputs} value={roomSize.width} /> e comprimento <input type="number" name="length" placeholder="Comprimento da sala" onChange={handleRoomSizeInputs} value={roomSize.length} />: {socialDistanceCalculation(roomSize)}</h1>
+      <h1>3: Base maior <input type="number" name="major" placeholder="Base maior" onChange={handleTrapezioInputs} value={trapezio.major} />, base menor <input type="number" name="minor" placeholder="Base menor" onChange={handleTrapezioInputs} value={trapezio.minor} /> e altura <input type="number" name="height" placeholder="Altura" onChange={handleTrapezioInputs} value={trapezio.height} />: Área trapézio: {areaTrapezio(2, trapezio)}<br/> Volume pirâmide: {areaTrapezio(3, trapezio)}</h1>
+      <h1>4: Lado A <input type="number" name="lado1" placeholder="Lado A" onChange={handleTriangleInputs} value={triangle.lado1} />, Lado B <input type="number" name="lado2" placeholder="Lado B" onChange={handleTriangleInputs} value={triangle.lado2} /> e Lado C <input type="number" name="Lado C" placeholder="Lado 3" onChange={handleTriangleInputs} value={triangle.lado3} />: {triangleType(triangle)}</h1>
+      <h1>5: Insira o número estático para cálculo da sequência de Fibonacci  <input type="number" placeholder="Número" onChange={handleFibonacciInputs} />: {fibonacci(fibonacciNumber).join(' ')}</h1>
     </>
   )
 }
